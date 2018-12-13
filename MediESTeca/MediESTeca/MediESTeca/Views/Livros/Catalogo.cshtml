@@ -1,0 +1,24 @@
+﻿@model IEnumerable<MediESTeca.Models.Livro>
+
+@{
+    ViewData["Title"] = "Catálogo";
+}
+
+<h3>Catálogo</h3>
+
+@foreach (var livro in @Model)
+{
+    <p>
+        <b>Título:</b> @livro.Titulo
+    </p>
+    <p>
+        <b>Autor:</b> @livro.Autor
+    </p>
+    <p>
+        <b>Ano de edição:</b> @livro.AnoEdicao
+    </p>
+    <br />
+
+}
+
+

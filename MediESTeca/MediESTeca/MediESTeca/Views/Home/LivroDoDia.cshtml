@@ -1,0 +1,24 @@
+﻿@model MediESTeca.Models.Livro
+
+@{
+    ViewData["Title"] = "Livro Do Dia";
+}
+
+<h3>Livro Do Dia</h3>
+
+
+<p>
+    <b>Título:</b> @Model.Titulo
+</p>
+<p>
+    <b>Autor:</b> @Model.Autor
+</p>
+<p>
+    <b>Ano de edição:</b> @Model.AnoEdicao
+</p>
+<h4><a asp-controller="Home" asp-action="DescarregarIndice" class="label label-success">Índice</a></h4>
+<br />
+<p>
+    --- @ViewData["IndexLivro"] ---
+</p>
+
